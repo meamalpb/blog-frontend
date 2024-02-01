@@ -1,10 +1,18 @@
-import '../styles/App.css'
+import '../styles/App.css';
 import NavBar from './AppBar';
-function App() {
+import EditorCanvas from './Editor/Editor';
+import EditorJS from '@editorjs/editorjs';
 
+
+
+
+function App() {
+  
   return (
     <>
-      <NavBar></NavBar>
+    <NavBar></NavBar>
+    <EditorCanvas></EditorCanvas>      
+      
     </>
   )
 }

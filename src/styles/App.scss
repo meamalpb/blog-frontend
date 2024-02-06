@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Jacques Francois Shadow';
+    src: url('../assets/Jacques_Francois_Shadow/JacquesFrancoisShadow-Regular.ttf') format('truetype');
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+
+.check1 {
+    display: flex;
+    color: black;
+    height: 100px;
+    border-bottom: 1px solid rgb(212, 199, 199);
+    font-size: 135%;
+    padding: 0px 60px;
+
+
+
+    .check2 {
+        padding: 40px 40px;
+        height: 20px;
+        border-bottom: 1px solid rgb(212, 199, 199);
+        background-color: white;
+        background-image: linear-gradient(white);
+        transition: background-image 5s ease;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+
+
+    .check2 {
+        position: relative;
+        display: inline-block;
+        color: black;
+        /* Adjust text color as needed */
+        text-decoration: none;
+    }
+
+    .check2::before,
+    .check2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        /* Adjust the thickness of the border-bottom */
+        background-color: black;
+        /* Initial color of the border */
+        transition: width 0.3s ease;
+        /* Adjust the transition speed as needed */
+        left: 0;
+    }
+
+    .check2::before {
+        left: 50%;
+        /* Start from the middle of the border */
+        transform: translateX(-50%);
+    }
+
+    .check2::after {
+        right: 50%;
+        /* Start from the middle of the border */
+        transform: translateX(50%);
+    }
+
+    .check2:hover::before,
+    .check2:hover::after {
+        width: 50%;
+        /* Expand the border from the middle to the respective sides */
+    }
+
+    .check3 {
+        padding: 20px 40px;
+        margin-right: auto;
+        font-size: 180%;
+        font-family: 'Jacques Francois Shadow', sans-serif;
+        letter-spacing: 3px;
+        border: 0cap;
+    }
+
+}
+
+
+
+#editorjs {
+    width: 100%;
+    height: 100%;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    align-items: center; /* Center horizontally */
+}
+
+#author {
+
+    margin-top: 20px;
+
+    .author-details{
+        display: flex;
+    }
+    .line {
+        height: 2px;
+        width: 500px;
+        background-color: black;
+    }
+    .dp{
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        margin-left: -212px;    }
+    .one{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 2px;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-weight: 100;
+    }
+}
+
+
+.heading{
+    font-size: 270%;
+    font-family:"Montserrat";
+    margin: 30px 500px;
+    text-align: center;
+    
+
+}
+
+.heading-img{
+    width:1500px;
+    height: 700px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

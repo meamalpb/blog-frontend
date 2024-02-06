@@ -1,10 +1,12 @@
 import EditorJS from '@editorjs/editorjs';
 import { useEffect } from 'react';
+import EDITOR_TOOLS from './Tools';
 
 function EditorCanvas() {
     useEffect(() => {
         const editor = new EditorJS({
           holder: 'editorjs',
+        tools:EDITOR_TOOLS
         });
     
     

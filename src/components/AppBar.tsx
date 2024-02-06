@@ -8,10 +8,11 @@ export default function  NavBar() {return (
     </header> */}
 
     <div className="check1">
-    <div className="check3 check2">lorem</div>
-    <div className="check2">lorem1</div>
-    <div className="check2">lorem2</div>
-    <div className="check2">lorem3</div>
+    <div className="check3 ">AMAL P B</div>
+    <div className="check2">Blogs</div>
+    <div className="check2">Links</div>
+    <div className="check2">Projects</div>
+    <div className="check2">About</div>
     </div>
     </>
 );}

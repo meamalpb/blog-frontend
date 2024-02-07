@@ -6,15 +6,14 @@ body {
   margin: 0;
 }
 
-.check1 {
+.navbar {
   display: flex;
   color: black;
-  height: 100px;
   border-bottom: 1px solid rgb(212, 199, 199);
   font-size: 135%;
   padding: 0px 60px;
 }
-.check1 .check2 {
+.navbar .navbar__item {
   padding: 40px 40px;
   height: 20px;
   border-bottom: 1px solid rgb(212, 199, 199);
@@ -23,15 +22,14 @@ body {
   transition: background-image 5s ease;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.check1 .check2 {
+.navbar .navbar__item {
   position: relative;
   display: inline-block;
   color: black;
-  /* Adjust text color as needed */
   text-decoration: none;
 }
-.check1 .check2::before,
-.check1 .check2::after {
+.navbar .navbar__item::before,
+.navbar .navbar__item::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -44,22 +42,22 @@ body {
   /* Adjust the transition speed as needed */
   left: 0;
 }
-.check1 .check2::before {
+.navbar .navbar__item::before {
   left: 50%;
   /* Start from the middle of the border */
   transform: translateX(-50%);
 }
-.check1 .check2::after {
+.navbar .navbar__item::after {
   right: 50%;
   /* Start from the middle of the border */
   transform: translateX(50%);
 }
-.check1 .check2:hover::before,
-.check1 .check2:hover::after {
+.navbar .navbar__item:hover::before,
+.navbar .navbar__item:hover::after {
   width: 50%;
   /* Expand the border from the middle to the respective sides */
 }
-.check1 .check3 {
+.navbar .navbar-title {
   padding: 20px 40px;
   margin-right: auto;
   font-size: 180%;
@@ -75,8 +73,10 @@ body {
 
 .center-container {
   display: flex;
-  flex-direction: column; /* Ensure elements stack vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  /* Ensure elements stack vertically */
+  align-items: center;
+  /* Center horizontally */
 }
 
 #author {
@@ -132,4 +132,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-img {
+    width: 600px;
+    height: 250px;
+  }
+  .navbar {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    color: black;
+    padding: 20px;
+    /* Add padding to all sides */
+    border-bottom: 0px;
+    font-size: 14px;
+    /* Adjust font size for mobile */
+  }
+  .navbar__item {
+    padding: 10px 20px;
+    /* Reduce padding for smaller screens */
+    border-bottom: 1px solid rgb(212, 199, 199);
+    background-color: white;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    /* Center text */
+    width: 100%;
+    /* Take full width of container */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+  }
+  .navbar__item:hover::before,
+  .navbar__item:hover::after {
+    width: 100%;
+    /* Expand the border to full width on hover */
+  }
+  .navbar-title {
+    border-bottom: 1px solid rgb(212, 199, 199);
+    background-color: white;
+    text-align: center;
+    /* Center text */
+    width: 100%;
+    /* Take full width of container */
+    box-sizing: border-box;
+    font-family: "Jacques Francois Shadow", sans-serif;
+  }
+  .heading {
+    font-size: 200%;
+    font-family: "Montserrat";
+    margin: 30px 150px;
+    text-align: center;
+  }
+  #author .name {
+    font-size: small;
+  }
+  #author .time {
+    font-size: small;
+    left: 46px;
+  }
+  #author .line {
+    width: 380px;
+  }
+  #author .dp {
+    margin-left: -100px;
+  }
 }/*# sourceMappingURL=App.css.map */

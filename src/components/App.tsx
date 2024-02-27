@@ -1,19 +1,20 @@
 import '../styles/App.css';
 import NavBar from './AppBar';
-import EditorCanvas from './Editor/Editor';
-import Author from './Author';
-import Heading from './Heading';
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Home';
+import Login from './Login';
 function App() {
   
   return (
-    <>
-    <NavBar></NavBar>
-    <Heading></Heading>
-    <Author></Author>
-    <EditorCanvas></EditorCanvas>      
-    </>
+    <BrowserRouter>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 

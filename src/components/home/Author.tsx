@@ -1,5 +1,5 @@
-import img from '../assets/img.jpeg';
-import '../styles/App.css';
+import img from "../../assets/img.jpeg";
+import '../../styles/App.css';
 
 function Author() {
   return (

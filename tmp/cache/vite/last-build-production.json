@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "errors": "Could not resolve \"../assets/img.jpeg\" from \"src/components/home/Author.tsx\"\nfile: /home/ampb/projects/practice/node-ts/netninja/ts-project/src/components/home/Author.tsx\nerror during build:\nRollupError: Could not resolve \"../assets/img.jpeg\" from \"src/components/home/Author.tsx\"\n    at error (file:///home/ampb/projects/practice/node-ts/netninja/ts-project/node_modules/rollup/dist/es/shared/parseAst.js:337:30)\n    at ModuleLoader.handleInvalidResolvedId (file:///home/ampb/projects/practice/node-ts/netninja/ts-project/node_modules/rollup/dist/es/shared/node-entry.js:18022:24)\n    at file:///home/ampb/projects/practice/node-ts/netninja/ts-project/node_modules/rollup/dist/es/shared/node-entry.js:17982:26\n",
+  "timestamp": "2024-02-29 14:02:18",
+  "vite_ruby": "3.3.4",
+  "digest": "664fc26477799ed2d935822baa9938ce4a000c9f"
+}

@@ -1,6 +1,6 @@
 import EditorCanvas from './Editor/Editor';
-import Author from './Author';
-import Heading from './Heading';
+import Author from './home/Author';
+import Heading from './home/Heading';
 
 export default function Home() {
   return (
